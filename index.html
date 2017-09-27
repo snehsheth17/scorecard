@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Live Scorecard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    
+	
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url(MI.jpg);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-blend-mode: luminosity;
+			}
+		h1, h5 {
+			color: white;
+			}
+		li {
+			background-color: #003390;
+			padding: 5px;
+			font-family: arial;
+			font-size: 16px;
+			font-weight: 600;
+			color: white;
+			}
+		li a {
+			text-decoration: none;
+			color: white;
+			}
+		
+		.container {
+			margin-left: 0;
+			margin-right: 0;
+			padding: 0;
+			max-width: 100%;
+			}
+		.row {
+			position: absolute;
+			width: 65%;
+			margin-right: 17.5%;
+			margin-left: 17.5%;
+			margin-bottom: 10%;
+			}
+		.card-body {
+			min-height: 400px;
+			}
+		.card-title {
+			margin: 0;
+			background-color: #003390;
+			text-align: center;
+			padding: 10px 0;
+			}
+		.card-title a {
+			text-decoration: none;
+			color: white;
+			}
+		.card-text {
+			padding: 1.25rem;
+			}
+		.table {
+			margin: 0;
+			}
+		iframe {
+			width: 100%;
+			height: 359px;
+			}
+		
+		.my-4 {
+			text-align: center;
+			}
+		.card {
+			border: none;
+			}
+		.header-banner {
+			width: 100%;
+			text-align: center;
+			padding: 4px 0;
+			}
+		#div-gpt-ad-1505504616233-0 {
+			margin: 0 auto;
+			}
+		#div-gpt-ad-1505505159137-0 {
+			margin: 0 auto;
+			margin-bottom: 20px;
+			}
+		.portfolio-item {
+			margin-bottom: 0;
+			}
+		.skyscraper_left_atf {
+			position: absolute;
+			margin-left: -148px;
+			margin-top: 10%;l
+			}
+		.skyscraper_right_atf {
+			position: absolute;
+			margin-left: 1225px;
+			margin-top: 10%;
+			}
+		.skyscraper_left_btf {
+			position: absolute;
+			margin-left: -148px;
+			margin-top: 69%;l
+			}
+		.skyscraper_right_btf {
+			position: absolute;
+			margin-left: 1225px;
+			margin-top: 69%;
+			}
+		.col-lg-12.portfolio-item {
+			margin: 15px 0;
+			}
+		.col-lg-6.portfolio-item {
+			margin: 15px 0;
+			}
+			
+			
+			
+			
+			
+			
+			
+	@media (min-width: 0px) and (max-width: 1024px) {
+		.row {
+			width: 100%;
+			margin: 5% 0;
+			}
+	@media (min-width: 0) and (max-width: 768px) {
+		iframe {
+			max-height: 215px;
+			}
+		}
+	@media (min-width: 768px) and (max-width: 1024px) {
+		iframe {
+			min-height: 400px;
+			}
+		}
+		
+	
+	</style>
+	
+	
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+	<!--
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	-->
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading -->
+	  
+      <div class="my-4">
+	  <img src="http://www.nhra.com/themes/custom/nhra/assets/images/logo.png"/>
+	  <h1>Live Scorecard</h1>
+        <h5>Presented By Mello Yello</h5>
+      </div>
+	  
+      <div class="row">
+	  <div class="header-banner">
+		<img src="MY_728x90_ATF.png"/>
+	  </div>
+	  <div class="skyscraper_left_atf" id="scroll_top">
+		<img src="skyscraper_100x600_left.jpg"/>
+	  </div>
+	  <div class="skyscraper_right_atf" id="scroll_top">
+		<img src="skyscraper_100x600_right.jpg"/>
+	  </div>
+	  <div class="skyscraper_left_btf" id="scroll_top">
+		<img src="skyscraper_100x600_left.jpg"/>
+	  </div>
+	  <div class="skyscraper_right_btf" id="scroll_top">
+		<img src="skyscraper_100x600_right.jpg"/>
+	  </div>
+        <div class="col-lg-12 portfolio-item">
+          <div class="card h-100">
+            <!--<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>-->
+            <div class="card-body">
+              
+              <ul class="nav nav-tabs" id="timing-results">
+				<li><a href="#livetiming" data-toggle="tab">Live Timing</a></li>
+				<li><a href="#results" data-toggle="tab">Results</a></li>
+			  </ul>
+			  <div class="tab-content">
+				<div id="livetiming" class="tab-pane">
+					<table class="table table-sm table-inverse">
+					  <thead>
+						<tr>
+						  <th>#</th>
+						  <th>First Name</th>
+						  <th>Last Name</th>
+						  <th>Username</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <th scope="row">1</th>
+						  <td>Mark</td>
+						  <td>Otto</td>
+						  <td>@mdo</td>
+						</tr>
+						<tr>
+						  <th scope="row">2</th>
+						  <td>Jacob</td>
+						  <td>Thornton</td>
+						  <td>@fat</td>
+						</tr>
+						<tr>
+						  <th scope="row">3</th>
+						  <td colspan="2">Larry the Bird</td>
+						  <td>@twitter</td>
+						</tr>
+						<tr>
+						  <th scope="row">4</th>
+						</tr>
+						<tr>
+						  <th scope="row">5</th>
+						</tr>
+						<tr>
+						  <th scope="row">6</th>
+						</tr>
+						<tr>
+						  <th scope="row">7</th>
+						</tr>
+						<tr>
+						  <th scope="row">8</th>
+						</tr>
+						<tr>
+						  <th scope="row">9</th>
+						</tr>
+						<tr>
+						  <th scope="row">10</th>
+						</tr>
+					  </tbody>
+					</table>
+				</div>
+				<div id="results" class="tab-pane">
+					<table class="table table-sm table-striped">
+				  <thead>
+					<tr>
+					  <th>#</th>
+					  <th>First Name</th>
+					  <th>Last Name</th>
+					  <th>Username</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th scope="row">1</th>
+					  <td>Blue</td>
+					  <td>Grass</td>
+					  <td>@mdo</td>
+					</tr>
+					<tr>
+					  <th scope="row">2</th>
+					  <td>Jimmy</td>
+					  <td>Crackcorn</td>
+					  <td>@fat</td>
+					</tr>
+					<tr>
+					  <th scope="row">3</th>
+					  <td colspan="2">Larry the Bird</td>
+					  <td>@twitter</td>
+					</tr>
+					<tr>
+					  <th scope="row">4</th>
+					</tr>
+					<tr>
+					  <th scope="row">5</th>
+					</tr>
+					<tr>
+					  <th scope="row">6</th>
+					</tr>
+					<tr>
+					  <th scope="row">7</th>
+					</tr>
+					<tr>
+					  <th scope="row">8</th>
+					</tr>
+					<tr>
+					  <th scope="row">9</th>
+					</tr>
+					<tr>
+					  <th scope="row">10</th>
+					</tr>
+				  </tbody>
+				</table>
+				</div>
+			</div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-12 portfolio-item">
+        <div class="card h-100">
+            <!--<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>-->
+            <div class="card-body">
+              
+              <ul class="nav nav-tabs" id="order-ladders">
+				<li><a href="#order" data-toggle="tab">Qualifying Order</a></li>
+				<li><a href="#ladders" data-toggle="tab">Ladders</a></li>
+			  </ul>
+			  <div class="tab-content">
+				<div id="order" class="tab-pane">
+					<table class="table table-sm table-inverse">
+					  <thead>
+						<tr>
+						  <th>#</th>
+						  <th>First Name</th>
+						  <th>Last Name</th>
+						  <th>Username</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <th scope="row">1</th>
+						  <td>Mark</td>
+						  <td>Otto</td>
+						  <td>@mdo</td>
+						</tr>
+						<tr>
+						  <th scope="row">2</th>
+						  <td>Jacob</td>
+						  <td>Thornton</td>
+						  <td>@fat</td>
+						</tr>
+						<tr>
+						  <th scope="row">3</th>
+						  <td colspan="2">Larry the Bird</td>
+						  <td>@twitter</td>
+						</tr>
+						<tr>
+						  <th scope="row">4</th>
+						</tr>
+						<tr>
+						  <th scope="row">5</th>
+						</tr>
+						<tr>
+						  <th scope="row">6</th>
+						</tr>
+						<tr>
+						  <th scope="row">7</th>
+						</tr>
+						<tr>
+						  <th scope="row">8</th>
+						</tr>
+						<tr>
+						  <th scope="row">9</th>
+						</tr>
+						<tr>
+						  <th scope="row">10</th>
+						</tr>
+					  </tbody>
+					</table>
+				</div>
+				<div id="ladders" class="tab-pane">
+					<table class="table table-sm table-striped">
+				  <thead>
+					<tr>
+					  <th>#</th>
+					  <th>First Name</th>
+					  <th>Last Name</th>
+					  <th>Username</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th scope="row">1</th>
+					  <td>Blue</td>
+					  <td>Grass</td>
+					  <td>@mdo</td>
+					</tr>
+					<tr>
+					  <th scope="row">2</th>
+					  <td>Jimmy</td>
+					  <td>Crackcorn</td>
+					  <td>@fat</td>
+					</tr>
+					<tr>
+					  <th scope="row">3</th>
+					  <td colspan="2">Larry the Bird</td>
+					  <td>@twitter</td>
+					</tr>
+					<tr>
+					  <th scope="row">4</th>
+					</tr>
+					<tr>
+					  <th scope="row">5</th>
+					</tr>
+					<tr>
+					  <th scope="row">6</th>
+					</tr>
+					<tr>
+					  <th scope="row">7</th>
+					</tr>
+					<tr>
+					  <th scope="row">8</th>
+					</tr>
+					<tr>
+					  <th scope="row">9</th>
+					</tr>
+					<tr>
+					  <th scope="row">10</th>
+					</tr>
+				  </tbody>
+				</table>
+				</div>
+			</div>
+            </div>
+          </div>
+        
+        </div>
+		<div class="header-banner">
+		<img src="MY_728x90_BTF.png"/>
+	  </div>
+		
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100">
+            <!--<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>-->
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Standings</a>
+              </h4>
+              <table class="table table-sm table-inverse">
+				  <thead>
+					<tr>
+					  <th>#</th>
+					  <th>First Name</th>
+					  <th>Last Name</th>
+					  <th>Username</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th scope="row">1</th>
+					  <td>Mark</td>
+					  <td>Otto</td>
+					  <td>@mdo</td>
+					</tr>
+					<tr>
+					  <th scope="row">2</th>
+					  <td>Jacob</td>
+					  <td>Thornton</td>
+					  <td>@fat</td>
+					</tr>
+					<tr>
+					  <th scope="row">3</th>
+					  <td colspan="2">Larry the Bird</td>
+					  <td>@twitter</td>
+					</tr>
+					<tr>
+					  <th scope="row">4</th>
+					</tr>
+					<tr>
+					  <th scope="row">5</th>
+					</tr>
+					<tr>
+					  <th scope="row">6</th>
+					</tr>
+					<tr>
+					  <th scope="row">7</th>
+					</tr>
+					<tr>
+					  <th scope="row">8</th>
+					</tr>
+					<tr>
+					  <th scope="row">9</th>
+					</tr>
+					<tr>
+					  <th scope="row">10</th>
+					</tr>
+				  </tbody>
+				</table>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100"  id="video-card">
+            <!--<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>-->
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Video Highlights</a>
+              </h4>
+			  <iframe src="https://www.youtube.com/embed/9YJGDWJEX4w?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+			
+          </div>
+        </div>
+		<div class="header-banner">
+		<img src="MY_728x90_ATF.png"/>
+	  </div>
+      </div>
+      <!-- /.row -->
+
+      <!-- Pagination -->
+	  <!--
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <!--<footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    <!--</footer>-->
+    <script>
+	$('#timing-results a:first').tab('show');
+	$('#order-ladders a:first').tab('show');
+	</script>
+	
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
